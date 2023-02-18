@@ -1,0 +1,19 @@
+    <html>
+<script>
+    let numeroMayor = 99;
+    let numeroMenor = 1;
+    let sorteos = ['1PM', '5PM', '10PM'];
+
+    function num(min,max){        
+        return Math.round(Math.random() * (max - min) + min);
+
+
+    }
+    
+    sorteos.forEach (Element => {
+        document.write (Element    + "    "   + num(numeroMayor, numeroMenor) +
+        "     "   +num(numeroMayor, numeroMenor)+ 
+        "     "   +num(numeroMayor, numeroMenor) + "<br>" ); 
+    });
+</Script>
+    </html>
